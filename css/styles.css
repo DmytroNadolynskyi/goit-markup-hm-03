@@ -13,7 +13,11 @@
     --secondly-bg-color: #2F303A;
     --under-contact-color: rgba(255, 255, 255, 0.6);
     --third-section-color:#F5F4FA;
+    --border-color:#EEEEEE;
 }
+
+
+
 html{
     box-sizing: border-box;
 }
@@ -22,11 +26,13 @@ html{
 *::before{
     box-sizing: inherit;
 }
-
+h1,h2,h3,p{
+    margin: 0;
+}
 
 body {
-    background-color: var(--primary-background-color);
-    color: var(--primary-text-color);
+    background-color: var(--white-color);
+   color:var(--primary-text-color);
     font-family: roboto, sans-serif;
     letter-spacing: 0.03em;
     font-size: 14px;
@@ -45,6 +51,10 @@ ul {
 /*header*/
 .header{
     background-color: var(--white-color) ;
+    height: 80px;
+    border-bottom:solid 1px #EEEEEE;
+    
+    
 
 }
 .conteiner{
@@ -52,19 +62,25 @@ ul {
     padding-left: 15px;
     padding-right: 15px;
     
+    
+    
+    
+   
+    
+    
     margin-left: auto;
     margin-right: auto;
-    
+}
   
     
    
-}
-.conteiner .main-nav{
-    height: 80px;
-}
+
 .main-nav{
     display: flex;
     align-items: center;
+    
+   
+   
 }
 
 
@@ -107,6 +123,8 @@ ul {
     /*site-nav*/
     .site-nav{
         display: flex;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
     .site-nav .item{
        
@@ -178,6 +196,7 @@ ul {
     .hero {
         background-color: var(--secondly-bg-color);
         text-align: center;
+        padding: 200px;
         
     }
 
@@ -186,6 +205,9 @@ ul {
          font-weight: 900; 
          font-size: 44px ;
          line-height: 1.36;
+         width: 696px;
+         margin-left: auto;
+         margin-right: auto;
         
         letter-spacing: 0.06em;
         text-transform: uppercase;
@@ -203,7 +225,7 @@ ul {
             font-weight: 700;
                 font-size: 16px;
                 line-height: 1.9;
-                width: 221px;
+               
                
                 letter-spacing: 0.06em;
 
@@ -212,6 +234,11 @@ ul {
                 
                 
 
+        }
+        img{
+            display: block;
+            max-width: 100%;
+            height: auto;
         }
 
     /*Section*/
@@ -272,7 +299,7 @@ ul {
     /*SECOND SECTION*/
     .second{
         padding-top: 0;
-        padding-bottom: 0;
+        padding-bottom: 94px;
     }
 
     /*whet we do*/
@@ -280,7 +307,10 @@ ul {
     display: flex;
 }
 .occupation{
-    margin-right: 30px;
+    margin-left: 30px;
+}
+.occupation:first-child{
+    margin-left: 0;
 }
 
 
@@ -307,7 +337,7 @@ ul {
             font-size: 16px;
             line-height: 1.2;
             text-align: center;
-            margin-top: 30px;
+            margin-top: 0;
             margin-bottom: 10px;
     }
     .special{
@@ -318,13 +348,19 @@ ul {
             margin: 0;
 
     }
+    .data{
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        background-color: var(--white-color);
+    }
 
     
     /*footer*/
     .footer {
         background-color: var(--secondly-bg-color);
-        padding-top: 94px;
-        padding-bottom: 94px;
+        padding-top: 60px;
+        padding-bottom: 60px;
         
         
       
@@ -336,6 +372,7 @@ ul {
         font-size: 26px;
         line-height: 1.19;
         text-decoration: none;
+        margin-bottom: 20px;
         
        
 
@@ -348,7 +385,7 @@ ul {
     }
         .address {
             font-size: 14px;
-            margin: 0;
+            margin-top: 20px;
 
         }
 
@@ -362,6 +399,7 @@ ul {
         
         line-height: 1.71;
         text-align: left;
+        text-decoration: none;
         
     }
 
@@ -403,14 +441,18 @@ ul {
 
     /*portfolio-css*/
     .hero-port{
-        background-color: var(--primary-background-color);
+        
         padding-top: 94px;
             padding-bottom: 94px;
     }
     .navig{
         display: flex;
         justify-content: center;
+        margin-bottom: 50px;
         
+    }
+    .filters{
+        margin: 0;
     }
 
      
@@ -427,8 +469,12 @@ ul {
         fill:solid var(--secondly-text-color);
         border-radius: 4px;
         margin-left: 8px;
-        margin-bottom: 50px;
+        padding: 6px 22px;
+        
         border-color: transparent;
+    }
+    .one{
+        padding: 6px 25px;
     }
     .filt:hover,
     .filt:focus{
@@ -464,6 +510,15 @@ ul {
         margin-bottom: 0;
     }
 
+    .poster{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: var(--white-color);
+        border:solid 1px var(--border-color);
+        padding-left: 24px;
+        padding-right: 24px;
+
+    }
         
     
     .port-img{
@@ -484,7 +539,8 @@ ul {
             font-size: 18px;
             line-height: 2;
             letter-spacing: 0.06em;
-           margin-left: 24px;
+            margin: 0;
+          
             margin-bottom: 4px;
             
             
@@ -494,9 +550,10 @@ ul {
         font-size: 16px;
         line-height: 1.88;
         color:var(--primary-text-color);
+        margin: 0;
        
-        margin-top: 0;
-        margin-left: 24px;
+       
+       
        
 
     }
