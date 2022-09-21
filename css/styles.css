@@ -196,7 +196,7 @@ ul {
     .hero {
         background-color: var(--secondly-bg-color);
         text-align: center;
-        padding: 200px;
+        padding: 200px 0;
         
     }
 
@@ -231,6 +231,8 @@ ul {
 
                 border-radius: 4px;
                 padding: 10px 32px;
+                border: none;
+                
                 
                 
 
@@ -279,7 +281,7 @@ ul {
         font-weight: 700;
         font-size: 14px;
            
-            line-height: 1.17;
+            line-height: 1.71;
            
             margin-bottom: 10px;
             margin: 0;
@@ -388,12 +390,19 @@ ul {
             margin-top: 20px;
 
         }
+        .footer-comm{
+            margin-bottom: 9px;
+        }
+        .footer-comm:last-child{
+            margin-bottom: 0;
+        }
+
 
          .location {
         color: var(--white-color);
         font-style: normal;
-        margin-top: 20px;
-        margin-bottom: 9px;
+        
+        
        
        
         
@@ -412,14 +421,12 @@ ul {
         font-style: normal;
         text-decoration: none;
         display: inline-block;
-        margin-bottom: 9px;
+        
     
        
         
     }
-    .connect .contact:last-child{
-        margin-bottom: 0;
-    }
+    
 
     .connect .contact:hover,
         .connect .contact:focus {
@@ -449,6 +456,7 @@ ul {
         display: flex;
         justify-content: center;
         margin-bottom: 50px;
+        gap: 8px;
         
     }
     .filters{
@@ -468,7 +476,7 @@ ul {
         vertical-align: top;
         fill:solid var(--secondly-text-color);
         border-radius: 4px;
-        margin-left: 8px;
+      
         padding: 6px 22px;
         
         border-color: transparent;
@@ -476,6 +484,7 @@ ul {
     .one{
         padding: 6px 25px;
     }
+    
     .filt:hover,
     .filt:focus{
         color:var(--white-color);
@@ -513,8 +522,9 @@ ul {
     .poster{
         padding-top: 20px;
         padding-bottom: 20px;
-        background-color: var(--white-color);
+      
         border:solid 1px var(--border-color);
+        border-top: none;
         padding-left: 24px;
         padding-right: 24px;
 
