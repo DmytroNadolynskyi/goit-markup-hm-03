@@ -105,6 +105,9 @@ ul {
             line-height: 1.19;
             text-decoration: none;
             margin-right: 93px;
+            padding-top: 24px;
+            padding-bottom: 25px;
+            display: block;
         }
     
 
@@ -121,12 +124,13 @@ ul {
     
 
     /*site-nav*/
-    .site-nav{
-        display: flex;
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
+        .site-nav {
+            display: flex;
+    
+        }
     .site-nav .item{
+        padding-top: 32px;
+            padding-bottom: 32px;
        
         margin-left: 50px;
     }
@@ -144,6 +148,10 @@ ul {
           line-height: 1.14;
          letter-spacing: 0.02em;
          text-decoration: none;
+         padding-top: 32px;
+         padding-bottom: 32px;
+         
+
          
 
 
@@ -162,6 +170,12 @@ ul {
         color: var(--text-blue-color);
     }
         /*comunication navigation*/
+                .commun {
+                    display: flex;
+                        margin-left: auto;
+                    
+                }
+
         .commun .contact {
             color: var(--primary-text-color);
             text-decoration: none;
@@ -169,18 +183,18 @@ ul {
             
                 line-height: 1.14;
                 letter-spacing:0.02em;
-    
+                padding: 32px 0;
+               
         }
-        .commun{
-            display: flex;
-            margin-left: auto;
-        }
+        
         .commun .item{
             margin-left: 50px;
+            
         }
         .commun .item:first-child{
             margin-left: 0;
         }
+         
         
     
         .commun .contact:hover,
@@ -291,6 +305,7 @@ ul {
     }
     .text{
         margin: 0;
+        line-height: 1.71;
     }
     
 
@@ -509,7 +524,7 @@ ul {
     }
     .photo{
         margin-right: 30px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         width: 370px;
     }
     .photo:nth-child(3n){
